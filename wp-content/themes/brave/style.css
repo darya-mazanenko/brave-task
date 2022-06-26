@@ -1,0 +1,392 @@
+/**
+Theme Name: Brave Homepage
+Theme URI: 
+Author: Darya Mazanenka
+Description: A Homepage Design
+Version: 1.0.0
+Text Domain: brave
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+.site-header {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    height: 2.5rem;
+    font-size: 0.875em;
+    line-height: 2.5rem;
+    padding: 0 2.3rem;
+    background: #EDEDED;
+}
+
+.top-text {
+    color: #38785E;
+}
+
+.top-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-menu .menu-item {
+    margin: 0 1.25em;
+}
+
+.top-menu .menu-item a {
+    position: relative;
+    display: inline-block;
+    padding-left: 26px;
+    font-size: 0.875em;
+    letter-spacing: 0.05em;
+    color: #38785E;
+    text-transform: uppercase;
+}
+.top-menu .menu-item a:before {
+    position: absolute;
+    top: 11px;
+    left: 0;
+    content: '';
+    width: 17px;
+    height: 1.125rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.top-menu .menu-item.book a:before {
+    background-image: url('assets/images/book.png');
+}
+.top-menu .menu-item.vip a:before {
+    background-image: url('assets/images/vip.png');
+}
+.top-menu .menu-item.phone a:before {
+    background-image: url('assets/images/phone.png');
+}
+
+
+.main-navigation {
+    display: flex;
+    justify-content: space-between;
+    height: 4.5em;
+    background: #fff;
+}
+.site-branding {
+    position: relative;
+    top: 0;
+    left: 2.3rem;
+}
+.site-branding .custom-logo {
+    width: 208px;
+    height: 144px;
+}
+.main-menu-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-menu {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+.main-menu .menu-item {
+    margin-left: 1.69em;
+    align-self: center;
+    text-align: center;
+}
+.main-menu .menu-item:first-child {
+    margin-left: 0;
+}
+.main-menu .menu-item:last-child {
+    width: 11.53em;
+    line-height: 4.5em;
+    text-align: center;
+    background: #1A5442;
+}
+.main-menu .menu-item:last-child a {
+    font-weight: bolder;
+    color: #fff;
+    text-transform: uppercase;
+}
+.main-menu .menu-item a {
+    color: #706F6F;
+    line-height: 1.19;
+}
+.more-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.5em;
+    height: 4.5em;
+    background: #38785E;
+}
+.more-btn a {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 0.625em;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0.15em;
+}
+.more-btn .dots-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 34px;
+    height: 6px;
+}
+.more-btn .dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #fff;
+}
+.more-btn a > span:last-child{
+    width: 100%;
+}
+
+.site-main {
+    padding-top: 7em;
+}
+/* home banner block */
+.home-banner {
+    position: relative;
+    padding: 15.5em 10% 2em 10%;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+.home-banner .banner-title {
+    margin-bottom: 12.7rem;
+    font-size: 3em;
+    line-height: 1.17em;
+    color: #fff;
+}
+.home-banner .banner-subtitle {
+    //margin-left: -5%;
+    margin-bottom: 1.82rem;
+    font-size: 1.5em;
+    line-height: 1.33;
+    color: #fff;
+    text-align: center;
+}
+.banner-subtitle span {
+    position: relative;
+}
+.banner-subtitle span:before,
+.banner-subtitle span:after {
+    position: absolute;
+    content: '';
+    width: 174.5px;
+    height: 0.03rem; //0.03rem;
+    background: #fff;
+}
+.banner-subtitle span:before {
+    top: 12px;
+    left: -214.5px;
+}
+.banner-subtitle span:after {
+    top: 12px;
+    right: -214.5px;
+}
+.home-banner .banner-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+    //margin-left: -5%;
+}
+.banner-menu .menu-item {
+    text-align: center;
+}
+.banner-menu .menu-item a {
+    color: #fff;
+}
+.banner-description {
+    height: 2.94em;
+    background: #4C9D78;
+}
+.banner-description p {
+    font-size: 0.875em;
+    line-height: 2.94rem;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.home-features {
+    margin-top: 7.4em;
+}
+
+.home-features h2 {
+    font-size: 2.5em;
+    color: #38785E;
+    text-align: center;    
+}
+.home-features p {
+    margin-top: 2.19em;
+    text-align: center;
+}
+
+.features-slider {
+    position: relative;
+    margin: 150px 0;
+}
+
+// feature slider
+.swiper {
+    /* width: 500px;
+    height: 300px; */
+}
+
+.swiper-slide img {
+    margin-bottom: 88px;
+    display: block;
+    width: 630px;
+    height: 510px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+}
+.slider-inner {
+    margin-top: 88px;
+    padding-top: 4em;
+    height: 531px;
+    background: #4C9D78;
+}
+.swiper-slide h3 {
+    margin-bottom: 1.19em;
+    margin-left: 660px;
+    font-family: "Libre Baskerville", sans-serif;
+    font-size: 2rem;
+    line-height: 1.1;
+    color: #fff;
+}
+.swiper-slide p {
+    margin-left: 700px;
+    width: 344px;    
+    font-size: 1em;
+    line-height: 2;
+    color: #fff;
+    text-align: left;
+}
+
+.swiper-slide a {
+    display: inline-block;
+    margin-top: 1.375em;
+    margin-left: 700px;  
+    width: 168px;
+    height: 3em;  
+    font-size: .875em;
+    line-height: 3;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #fff;
+}
+
+.swiper .icon {
+    position: absolute;
+    z-index: 10;
+    top: auto;
+    right: 40px;
+    bottom: -28px;
+    width: 144px;
+    height: 144px;    
+}
+
+.swiper-button-next, 
+.swiper-button-prev {    
+    top: 20px;
+    margin-top: 0;
+    height: 1em;
+    font-size: 1em;
+    color: #202020;    
+    outline: none;
+}
+.swiper-button-prev {
+    left: 1140px;
+}
+.swiper-button-next {
+    left: 1200px;
+}
+.swiper-button-next:after, 
+.swiper-button-prev:after {
+    font-size: 1em;
+}
+.demo-pagination {
+    position: absolute;
+    z-index: 10;
+    top: 20px;
+    left: 1150px;    
+    width: 70px;
+    height: 20px;
+    text-align: center;
+}
+
+
+
+.site-footer {    
+    background: #F2F2F2;
+}
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 4em 10% 12.5em;
+    background: ;
+    background: #38785E url('assets/images/footer-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 110% 150px;
+    background-position: center bottom;
+    //background: #38785E;
+}
+.footer-item {
+    font-size: 0.8125rem;
+    color: #fff;
+}
+.about-company {
+    width: 20.42%;
+}
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    height: 4.5rem;
+    font-size: 0.75rem;
+    line-height: 4.5rem;
+    color: #706F6F;
+}
+.footer-bottom a {
+    color: #706F6F;
+}
+.design-info a {
+    font-weight: bold;
+}
