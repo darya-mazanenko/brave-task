@@ -1,1 +1,1 @@
-# brave-task
+# Technical task
